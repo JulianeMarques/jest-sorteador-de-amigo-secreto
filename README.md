@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# About This Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was build to use JEST and RTL.
 
 ## Available Scripts
 
