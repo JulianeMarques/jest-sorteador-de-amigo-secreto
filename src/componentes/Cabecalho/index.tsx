@@ -1,13 +1,12 @@
-import './style.css';
+import './estilos.css'
 
-const Header = () => {
+const Cabecalho = () => {
     return (
-        <header className="Header">
+        <header className="cabecalho">
             <div className="imagem-logo" role="img" aria-label='Logo do Sorteador'></div>
             <img className='participante' src="/imagens/participante.png" alt="Participante com um presente na mão" />
         </header>
     )
 }
 
-
-export default Header
+export default Cabecalho
