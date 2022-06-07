@@ -13,3 +13,7 @@ test('when input is empty no new participants can be added', () => {
     // garantir que o btn esteja desabilitado - JEST
     expect(btn).toBeDisabled();
 });
+
+test('add a participant if there is a fulfilled name', () => {
+
+});
