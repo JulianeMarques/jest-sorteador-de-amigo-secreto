@@ -28,6 +28,6 @@ test('add a participant if there is a fulfilled name', () => {
     fireEvent.click(btn);
     // garantir que o input esteja com o foco ativo
     expect(input).toHaveFocus();
-    // garantir que o input n'ao tenha um valor (string vazia)
+    // garantir que o input nao tenha um valor (string vazia)
     expect(input).toHaveValue("");
 });
