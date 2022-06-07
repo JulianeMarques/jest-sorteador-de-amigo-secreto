@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 import Formulario from '../componentes/Formulario';
 
@@ -15,5 +15,19 @@ test('when input is empty no new participants can be added', () => {
 });
 
 test('add a participant if there is a fulfilled name', () => {
-
+    render(<Formulario/>)
+    const input = screen.getByPlaceholderText('Insira os nomes dos participantes');
+    const btn = screen.getByRole('button');
+    // inserir um valor no input (usuario digitando)
+    fireEvent.change(input, {
+        target: {
+            value: 'Irmao do Jorel'
+        }
+    });
+    // clicar no botao de submeter
+    fireEvent.click(btn);
+    // garantir que o input esteja com o foco ativo
+    expect(input).toHaveFocus();
+    // garantir que o input n'ao tenha um valor (string vazia)
+    expect(input).toHaveValue("");
 });
