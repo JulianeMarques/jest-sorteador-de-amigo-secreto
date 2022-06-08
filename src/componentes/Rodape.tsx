@@ -8,7 +8,7 @@ const Rodape = () => {
     const participantes = useListaDeParticipantes()
 
     const navegarPara = useNavigate()
-
+    
     const iniciar = () => {
         navegarPara('/sorteio')
     }
